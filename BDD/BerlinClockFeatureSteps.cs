@@ -8,7 +8,9 @@ namespace BerlinClock
     [Binding]
     public class TheBerlinClockSteps
     {
-        private ITimeConverter berlinClock = new TimeConverter();
+        
+        
+        private ITimeConverter berlinClock = new TimeConverter(new BerlinClockDefaultStrategy());
         private String theTime;
 
         
